@@ -25,6 +25,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
       </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+      </form>
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link" href="#" role="button">Login</a></li>
         <li class="nav-item"><a class="nav-link" href="#" role="button">Sign Up</a></li>
@@ -71,10 +75,11 @@
                   </span>
                 </div>
                 <ul class="comments-list">
+
                   <?php
-                  $postId = $onePost['id'];
-                  if (isset($comments[$postId])) {
-                    foreach ($comments[$postId] as $comment) {
+                  $idPost = $onePost['id'];
+                  if (isset($comments[$idPost])) {
+                    foreach ($comments[$idPost] as $comment) {
                   ?>
                       <li class="comment">
                         <a class="pull-left" href="#">

@@ -1,10 +1,10 @@
 <?php
-$db_user = "equesada";
-$db_passwd = "equesada";
+$db_user = "root";
+$db_passwd = "Soleil1234!";
 $db_host = "localhost";
 $db_port = "3306";
 $db_name = "tsn";
 $db_dataSourceName = "mysql:host=$db_host;port=$db_port;dbname=$db_name";
 
 $PDO = new PDO($db_dataSourceName, $db_user, $db_passwd);
-$PDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$PDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //permet d'afficher une erreur s'il y en a une.
